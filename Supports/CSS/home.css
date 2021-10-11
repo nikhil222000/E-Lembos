@@ -1,0 +1,121 @@
+/*Color's Start*/
+.li-clr{
+    background-color: rgb(40,103,178);
+}
+
+.nav-green-clr{
+    color: #18ba60;
+}
+
+.fb-clr{
+    background-color: #4267B2;
+}
+
+.insta-clr{
+    background-color: #5f92b2;;
+}
+
+.g-clr{
+    background-color: #BB001B;
+}
+
+.muted-clr{
+    color: #ffffffBf;
+}
+/*Color's END*/
+
+
+
+
+/*----- Header Icons -----*/
+.ls-none{
+    list-style: none;
+}
+
+.header-links{
+    text-decoration: none;
+    color: white;
+}
+
+.p-t{
+    padding-top: 0.9em;
+}
+.h-icon{
+    margin-left: 0.6em;
+    /* background-color: white; */
+    padding: 0.3em 0.6em;
+    color: white;
+}
+
+.h-icon:hover{
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s;
+    /* border: 0.5px solid white; */
+}
+
+.header-links:hover{
+    color: white;
+    text-decoration: none; 
+}
+
+.header-texts{
+    text-decoration: none;
+    padding: 0 1em;
+    color: #ffffffBf;
+    font-weight: bold;
+    /* border-right: 1px solid #ffffffBf; */
+}
+
+.header-texts:hover{
+    color: white;
+    transform: all 0.2s;
+}
+
+.border-left{
+    border-right: 0.2px solid #ffffffBf;
+}
+
+.header-email{
+    text-decoration: none;
+    color: white;
+}
+
+.header-email:hover{
+    color: white;
+}
+/*----- Header Icons -----*/
+
+
+
+
+/*===== YaaRaa LOGO NAVBAR-----*/
+
+nav{
+    position: sticky;
+}
+.grey-clr{
+    background-color: rgb(248, 248, 248);
+    padding: 1em;
+}
+
+.navbar-links{
+    text-decoration: none;
+    color: rgb(47, 72, 98);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-links:hover{
+    color: #1dac5d;
+}
+
+.pg-active{
+    color: #18ba60;
+    border: 2px solid #1dac5d;
+    padding: 0.5em;
+}
+/*===== YaaRaa LOGO NAVBAR-----*/
+
+
+
