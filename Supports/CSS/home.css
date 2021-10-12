@@ -1,3 +1,15 @@
+.my-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-row-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /*Color's Start*/
 .li-clr{
     background-color: rgb(40,103,178);
@@ -41,7 +53,7 @@
     padding-top: 0.9em;
 }
 .h-icon{
-    margin-left: 0.6em;
+    margin-right: 0.6em;
     /* background-color: white; */
     padding: 0.3em 0.6em;
     color: white;
@@ -90,9 +102,14 @@
 
 
 /*===== YaaRaa LOGO NAVBAR-----*/
+.toogle-btn{
+    color: black;
+}
 
 nav{
     position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .grey-clr{
     background-color: rgb(248, 248, 248);
@@ -115,7 +132,99 @@ nav{
     border: 2px solid #1dac5d;
     padding: 0.5em;
 }
+
+.w-20{
+    width: 20%;
+}
+
+.nav-toogle{
+    display: none;
+    /* background-color: white;
+    border: 2px solid red; */
+}
+
+.nav-toogle-btn{
+    color: black;
+    /* border: 2px solid red; */
+    /* float: right; */
+    cursor: pointer;
+}
 /*===== YaaRaa LOGO NAVBAR-----*/
+
+@media(max-width: 1270px)
+{
+     .my-row-evenly{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .w-20{
+        width: 30%;
+    }
+}
+
+
+@media(max-width: 780px)
+{
+    .my-row-evenly{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mob-txt{
+        font-size: 0.8rem;
+    }
+
+    .header-texts{
+        text-decoration: none;
+        padding: 0 0.5em;
+        font-size: 0.7rem;
+    }
+    
+    .header-texts:hover{
+        color: white;
+        transform: all 0.2s;
+    }
+
+    .border-left{
+        border-right: none;
+    }
+
+    .mob-right-m{
+        margin-right: 2.5em;
+    }
+
+    /*Navbar Settings*/
+    nav{
+        overflow: hidden;
+    }
+    .w-20{
+        width: 40%;
+    }
+
+    .d-hidden{
+        flex-direction: column;
+        transform: translateX(150%);
+        width: 100%;
+        transition: all 1s;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .nav-toogle{
+        display: unset;
+    }
+
+    .me-3{
+        margin-top: 2em;
+    }
+}
 
 
 
