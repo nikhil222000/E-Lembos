@@ -1,3 +1,13 @@
+:root{
+    --clr-teal: rgb(47, 72, 98);
+}
+
+.headingz{
+    color: var(--clr-teal);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
 .my-row{
     display: flex;
     justify-content: center;
@@ -111,6 +121,7 @@ nav{
     top: 0;
     z-index: 1;
 }
+
 .grey-clr{
     background-color: rgb(248, 248, 248);
     padding: 1em;
@@ -139,18 +150,20 @@ nav{
 
 .nav-toogle{
     display: none;
-    /* background-color: white;
-    border: 2px solid red; */
+    /* background-color: white; */
+    /* border: 2px solid red; */
 }
 
 .nav-toogle-btn{
     color: black;
-    /* border: 2px solid red; */
-    /* float: right; */
     cursor: pointer;
 }
 /*===== YaaRaa LOGO NAVBAR-----*/
 
+
+
+
+/*-------------------------------------------For HeaDERS AND nAVBARS --------------------------------------------*/
 @media(max-width: 1270px)
 {
      .my-row-evenly{
@@ -164,7 +177,6 @@ nav{
         width: 30%;
     }
 }
-
 
 @media(max-width: 780px)
 {
@@ -202,7 +214,13 @@ nav{
     nav{
         overflow: hidden;
     }
+
+    /*To Align The mobile nav as we hide the inner menu Lists*/
     .w-20{
+        width: 100%;
+    }
+
+    .w-20 > img{
         width: 40%;
     }
 
@@ -219,12 +237,136 @@ nav{
 
     .nav-toogle{
         display: unset;
+        /* border: 2px solid red; */
+        margin: auto 0;
+        /* z-index: 1; */
     }
 
-    .me-3{
+    .me-4{
         margin-top: 2em;
+    }
+
+    .navbar-links:hover{
+        color: #1dac5d;
+    }
+    
+    .pg-active{
+        color: #18ba60;
+        border: unset;
+        /* border-bottom: 1px solid #1dac5d;  */
+        /* padding: 0.5em; */
+    }
+    
+    .mob-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
+/*-------------------------------------------For HeaDERS AND nAVBARS --------------------------------------------*/
 
 
+/*----------- CARD's -------------*/
+.card-setz{
+    margin: 15vmin 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.card-isolater{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hover-msg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(240, 240, 240); */
+    background-color: white;
+    /* opacity: 0; */
+    transform: translateY(-120%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.card-isolater:hover .hover-msg{
+    transform: translateY(0);
+    transition: all 1s;
+    opacity: 1;
+}
+
+@media(max-width: 1270px)
+{
+    .card-setz{
+        margin-top: 10vmin;
+        flex-direction: column;
+      
+    }
+
+    .card-isolater{
+        width: 70%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 8vmin;
+    }
+}
+
+@media(max-width: 780px)
+{
+    .card-isolater{
+        width: 80%;
+    }
+}
+/*----------- CARD's -------------*/
+
+
+/*Training Contents Sliderz*/
+.cardz-slider-sec{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10vmin;
+}
+.contentz-slider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentz-slider > div > i{
+    /* color: #18ba60; */
+    color: black;
+    cursor: pointer;
+}
+
+.cardz-sliderz{
+    width: 90%;
+    /* border: 2px solid red; */
+    padding-left: 5em;
+}
+
+.cardz-sliderz > div{
+    margin: 0 1em;
+}
+
+.cardz-sliderz > div > img {
+    width: 35%;
+}
+
+
+@media(max-width: 1270px)
+{
+
+}
+/*Training Contents Sliderz*/
