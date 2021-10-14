@@ -431,3 +431,64 @@ nav{
     }
 }
 /*Corporate Clients CSS END*/
+
+
+/*Footer Start*/
+footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div{
+    width: 33.3%;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links-link{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links-link:hover{
+    color: white;
+}
+
+@media(max-width: 900px)
+{
+    footer{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer > div{
+        margin-top: 5vmin;
+        width: 80%;
+    }
+}
+/*Footer End*/
+
+.last-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.whats-app-fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: fit-content;
+    /* border: 2px solid red; */
+}
+
+/* .whats-app-fixed > a > i{
+    color:#25D366;
+} */
