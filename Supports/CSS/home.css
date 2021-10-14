@@ -352,7 +352,10 @@ nav{
 
 .arrow-iconz{
     /* color: #18ba60; */
-    color: #15416E;
+    background-color: #1dac5d;
+    padding: 0.3em;
+    /* color: #15416E; */
+    color: white;
     cursor: pointer;
 }
 
@@ -404,7 +407,7 @@ nav{
 @media(max-width: 720px)
 {
     .training-plan-btn{
-        margin-top: 6vmin;
+        margin-top: 10vmin;
     }
 }
 /*Training Contents Sliderz*/
