@@ -341,7 +341,7 @@ nav{
 .cardz-slider-sec{
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 10vmin;
+    margin-bottom: 15vmin;
 }
 .contentz-slider{
     display: flex;
@@ -350,7 +350,7 @@ nav{
     flex-direction: column;
 }
 
-.contentz-slider > div > i{
+.arrow-iconz{
     /* color: #18ba60; */
     color: #15416E;
     cursor: pointer;
@@ -359,7 +359,7 @@ nav{
 .cardz-sliderz{
     width: 90%;
     /* border: 2px solid red; */
-    padding-left: 3em;
+    padding-left: 5em;
 }
 
 .cardz-sliderz > div{
@@ -376,6 +376,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 .training-plan-btn{
@@ -393,7 +394,13 @@ nav{
     transition: all 0.5s;
 }
 
-
+@media(max-width: 1300px)
+{
+    .cardz-sliderz{
+        padding-left: 3em;
+    }
+    
+}
 @media(max-width: 720px)
 {
     .training-plan-btn{
@@ -401,3 +408,23 @@ nav{
     }
 }
 /*Training Contents Sliderz*/
+
+
+/*Corporate Clients CSS*/
+@media (max-width: 480px)
+{
+    .clients-slider{
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 4em;
+    }
+}
+
+@media (max-width: 720px) {
+    .clients-slider{
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 2em;
+    }
+}
+/*Corporate Clients CSS END*/
