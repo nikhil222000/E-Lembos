@@ -116,10 +116,10 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
-.slick-dots
+/* .slick-dots
 {
     position: absolute;
     bottom: -25px;
@@ -133,8 +133,19 @@
     list-style: none;
 
     text-align: center;
+} */
+
+.slick-dots{
+    /* display: inline-block; */
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 0em;
 }
-.slick-dots li
+/* .slick-dots li
 {
     position: relative;
 
@@ -146,24 +157,33 @@
     padding: 0;
 
     cursor: pointer;
+} */
+
+.slick-dots li{
+    list-style: none;
+    /* border: 2px solid black; */
+    width: fit-content;
+    display: inline-block;
+    margin: 0 0.1em;
 }
 .slick-dots li button
 {
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    /* display: block; */
 
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     padding: 5px;
 
     cursor: pointer;
-
-    color: transparent;
+    /* content: '.'; */
+    color: #18BA60;
     border: 0;
     outline: none;
-    background: transparent;
+    background: #2f4862;
+    border-radius: 50%;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -202,3 +222,4 @@
     opacity: .75;
     color: black;
 }
+

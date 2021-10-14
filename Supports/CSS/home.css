@@ -8,6 +8,12 @@
     font-weight: bold;
 }
 
+@media(max-width: 720px) {
+    .headingz{
+        font-size: 1.8rem;
+    }
+}
+
 .my-row{
     display: flex;
     justify-content: center;
@@ -346,14 +352,14 @@ nav{
 
 .contentz-slider > div > i{
     /* color: #18ba60; */
-    color: black;
+    color: #15416E;
     cursor: pointer;
 }
 
 .cardz-sliderz{
     width: 90%;
     /* border: 2px solid red; */
-    padding-left: 5em;
+    padding-left: 3em;
 }
 
 .cardz-sliderz > div{
@@ -361,12 +367,37 @@ nav{
 }
 
 .cardz-sliderz > div > img {
-    width: 35%;
+    width: 30%;
+}
+
+.slide-arrow-keys{
+    /* border: 2px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.training-plan-btn{
+    margin-top: 3vmin;
+    background-color: #6dab3c;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.training-plan-btn:hover{
+    transform: scale(1.05);
+    color: white;
+    transition: all 0.5s;
 }
 
 
-@media(max-width: 1270px)
+@media(max-width: 720px)
 {
-
+    .training-plan-btn{
+        margin-top: 6vmin;
+    }
 }
 /*Training Contents Sliderz*/
