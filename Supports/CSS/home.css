@@ -1,11 +1,17 @@
 :root{
-    --clr-teal: rgb(47, 72, 98);
+    --clr-teal: #15416E;
+    --aboutPG-sub: #2F4862;
+    --grn: #18ba60;
 }
 
 .headingz{
     color: var(--clr-teal);
     font-size: 2.2rem;
     font-weight: bold;
+}
+
+.clear-fxx{
+    clear: both;
 }
 
 @media(max-width: 720px) {
@@ -93,6 +99,10 @@
     color: #ffffffBf;
     font-weight: bold;
     /* border-right: 1px solid #ffffffBf; */
+}
+
+.header-texts-active{
+    color: white;
 }
 
 .header-texts:hover{
@@ -492,3 +502,54 @@ footer > div{
 /* .whats-app-fixed > a > i{
     color:#25D366;
 } */
+
+
+
+
+
+
+/*+++++++++++++++++++++++++++++++++ ABOUT PAGE START ++++++++++++++++++++++++++++++++++++*/
+.about-section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-ol{
+    list-style-type: disc;
+    
+}
+
+.abt-headingz{
+    color: var(--clr-teal);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sub-clr-txt{
+    color: var(--aboutPG-sub);
+}
+
+.abt-textz{
+    font-size: 1.2rem;
+}
+
+.abt-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.abt-btn{
+    background-color: var(--grn);
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.abt-btn:hover{
+    background-color: var(--clr-teal);
+    color: white;
+}
+
+.clear-fxx{
+    clear: both;
+}
