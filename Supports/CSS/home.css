@@ -20,6 +20,14 @@
     }
 }
 
+.main-teal-clr{
+    color: var(--clr-teal);
+}
+
+.sub-teal-clr{
+    color: var(--aboutPG-sub);
+}
+
 .my-row{
     display: flex;
     justify-content: center;
@@ -550,6 +558,66 @@ footer > div{
     color: white;
 }
 
-.clear-fxx{
-    clear: both;
+/*+++++++++++++++++++++++++++++++++ ABOUT PAGE START ++++++++++++++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++++++++++++++ SERVICE PAGE START ++++++++++++++++++++++++++++++++++++*/
+.service-sub-headingz{
+    font-size: 1.6rem;
+    color: var(--aboutPG-sub);
+    font-weight: bold;
 }
+
+.service-texts{
+    font-size: 1.1rem;
+    color: black;
+    font-weight: normal;
+}
+/*+++++++++++++++++++++++++++++++++ SERVICE PAGE START ++++++++++++++++++++++++++++++++++++*/
+
+
+
+/*+++++++++++++++++++++++++++++++++ CONTACT PAGE START ++++++++++++++++++++++++++++++++++++*/
+.contact-slvr-back{
+    background-image: url(../Images/contact-back.jpeg);
+    padding: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-cardz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 4em 2em;
+    width: 30%;
+    height: 350px;
+}
+
+.contact-cardz:hover{
+    transform: translateY(-15px);
+    transition: all 0.5s;
+}
+
+.contact-cardz:hover > p >i{
+    color: var(--grn);
+}
+
+@media (max-width: 780px)
+{
+    .contact-slvr-back{
+        padding: 3em;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact-cardz{
+        width: 100%;
+        margin-top: 1em;
+    }
+    
+}
+/*+++++++++++++++++++++++++++++++++ CONTACT PAGE START ++++++++++++++++++++++++++++++++++++*/
