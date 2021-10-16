@@ -79,6 +79,11 @@
     color: white;
 }
 
+.no-link{
+    text-decoration: none;
+    color: var(--clr-teal);
+}
+
 .p-t{
     padding-top: 0.9em;
 }
@@ -182,6 +187,35 @@ nav{
     color: black;
     cursor: pointer;
 }
+
+.nav-s-hover{
+    position: relative;
+}
+
+.nav-services-hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    /* display: none; */
+    position: absolute;
+    margin-left: -4.5em;
+    width: 240px;
+    padding: 1em 1em 0.5em 1em;
+    margin-top: 1em;
+    box-shadow: 0.1rem 0.1rem 0rem lightgray;
+}
+
+.nav-services-hover > p > a:hover {
+    color: green;
+}
+
+.d-nonez{
+    display: none;
+}
+
+
 /*===== YaaRaa LOGO NAVBAR-----*/
 
 
@@ -285,6 +319,22 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .nav-services-hover{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: transparent;
+        /* display: none; */
+        position: relative;
+        margin-left: none;
+        width: 100%;
+        padding: none;
+        margin-top: 1em;
+        margin: 0 auto;
+        box-shadow: none;
     }
 }
 
@@ -395,7 +445,7 @@ nav{
     /* border: 2px solid red; */
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
 }
@@ -616,8 +666,36 @@ footer > div{
 
     .contact-cardz{
         width: 100%;
-        margin-top: 1em;
+        margin-top: 2em;
     }
     
 }
 /*+++++++++++++++++++++++++++++++++ CONTACT PAGE START ++++++++++++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++ What WE DO SECTION +++++++++++++++++++++++*/
+.what-text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what-btn{
+    background-color: var(--clr-teal);
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.what-btn-grn{
+    background-color: var(--grn);
+    color: white;
+    font-weight: bold;
+}
+
+.what-btn-grn:hover{
+    background-color: var(--clr-teal);
+    color: white;
+}
+/*++++++++++++++++++++++++++++++++ What WE DO SECTION +++++++++++++++++++++++*/
