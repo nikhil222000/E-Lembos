@@ -506,7 +506,7 @@ nav{
 /*Corporate Clients CSS END*/
 
 
-/*Footer Start*/
+/*Footer Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 footer{
     color: white;
     display: flex;
@@ -546,7 +546,14 @@ footer > div{
         width: 80%;
     }
 }
-/*Footer End*/
+
+.f-icon{
+    margin-right: 0.6em;
+    /* background-color: white; */
+    padding: 0.3em 0.6em;
+    color: white;
+}
+/*Footer End ______________________________________________________________________________________________________*/
 
 .last-nav{
     display: flex;
