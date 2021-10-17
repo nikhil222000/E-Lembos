@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - YaaRaa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="..\Supports\CSS\index.css">
+    <link rel="stylesheet" href="..\Supports\CSS\home.css">
+</head>
+<body>
+
+    <header class="clr-teal container-fluid my-row-evenly p-t">
+        <div class="">
+            <ul class="my-row ls-none" style="margin-right: 1.1em;">
+                <li class="h-icon fb-clr"><a href="" class="header-links"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="h-icon g-clr"><a href="" class="header-links"><i class="fab fa-google"></i></a></li>
+                <li class="h-icon insta-clr"><a href="" class="header-links"><i class="fab fa-instagram"></i></a></li>
+                <li class="h-icon li-clr"><a href="" class="header-links"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+
+        <p class="muted-clr">Do you have any questions?</p>
+
+        <div class="my-row">
+            <p class="header-links"><i class="far fa-envelope"></i><a href="" class="ms-3 header-email mob-txt">awesome@gmail.com</a></p>
+            <p class="header-links ms-5"><i class="fas fa-phone"></i> <span class="ms-3 mob-txt">+916382698859</span></p>
+        </div>
+
+        <div class="mob-right-m">
+            <ul class="my-row ls-none">
+                <li class="border-left"><a href="../pages/contact.html" class="muted-clr header-texts">CONTACT</a></li>
+                <li class="border-left"><a href="" class="muted-clr header-texts">WHAT WE DO</a></li>
+                <li><a href="../pages/about.html" class="muted-clr header-texts">WHO WE ARE</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--logo Portion Section-->
+    <nav class="container-fluid my-row-evenly grey-clr shadow">
+        <div  class="w-20 mob-nav">
+            <img src="../Supports/Images/logo1.jfif" class="img-fluid" alt="YaaRaa Logo" width="100%">
+            <div class="nav-toogle mt-3">
+                <i class="fas fa-bars fa-2x nav-toogle-btn" onclick="toogleNav()"></i>
+           </div>
+        </div>
+
+        <ul class="ls-none my-row p-t d-hidden hide" id = "nav-item-list">
+            <li class="me-4"><a href="../index.html" class="navbar-links">home</a></li>
+            <li class="me-4"><a href="../pages/about.html" class="navbar-links">who we are</a></li>
+            <li class="me-4"><a href="../pages/whatwedo.html" class="navbar-links">what we do</a></li>
+            <li class="me-4"><a href="../pages/corporate.html" class="navbar-links">corporate training</a></li>
+            <div class="nav-s-hover">
+                <li class="me-4 text-center"><a style="cursor: pointer;" class="navbar-links pg-active" onclick="Show()">services <i id = "drop-iconz" class="fas fa-arrow-down"></i></a></li>
+                    <div id = "hidden-menu" class="nav-services-hover d-nonez" onmouseleave="hide()">
+                        <p class=""><a href="../pages/digitalMarketing.html" class = "no-link"><i class="far fa-dot-circle nav-green-clr"></i> Digital Marketing</a></p>
+                        <p><a href="../pages/appdev.html" class = "no-link"><i class="far fa-dot-circle nav-green-clr"></i> Mobile App Development</a></p>
+                        <p><a href="../pages/webDev.html" class = "no-link"><i class="far fa-dot-circle nav-green-clr"></i> Website & Web App Development</a></p>
+                    </div>
+            </div>
+            <li class="me-4"><a href="../pages/contact.html" class="navbar-links">contact</a></li>
+        </ul>
+    </nav>
+    <!--logo Portion Section-->
+
+    <section class="about-section">
+        <div class="text-center">
+            <img src="../Supports/Images/website-img.jpg" class="img-fluid" alt="">
+        </div>
+
+        <div class="service-sub-headingz mt-4">
+            <p class="">Website & Web App Development:</p>
+
+                    <p class="service-texts">The training program from YaaRaa offers a guided program consisting of courses that will equip you with the skills required to apply for Full Stack Development job, freelancing and product ownership opportunities. No prior experience to coding is required by the student. What you need to know is provided to you in this complete package. <br/><br/>
+
+                    With the first course in this program, we start you off by introducing you to Front End technologies. This will take you through everything you need to know to become a Front End Developer. <br/><br/>
+                    
+                    A Front End Developer creates whatever you visually see on a website. They are tasked with creating the necessary elements to make your website attractive, understandable and in the end, retain your user for a longer time and keep them coming back for more.</p>
+
+                    <p class="service-texts">The next course in the program lets you take a dive into coding by introducing you to the  programming Language with a short course. We start you off with the very basic then takes you all the way upto advanced topics.</p>
+
+                    <p class="service-texts"> A website stores a large amount of data. Knowing where to store the data and structure them properly will save you time when you actually need it. Implementing a proper algorithm to work with this data is the next step in ensuring that your website runs optimally. Both these skills are highly sought out for in a Web Developer and can be coded using any programming language. We will get this rolling with the third course- Data Structures and Algorithms course.</p>
+
+                    <p class="service-texts"> In the next course “Everything about Databases”, you will learn about Databases before proceeding to create the Back-End for your website. This course does exactly what the title says. It gives you a complete understanding of Database systems and concepts. The Database of a Web Application is supposed to be very quick in reponse. It can get very complicated for very large scale applications. Hence, obtaining a strong foundation in Database is quintessential for a Web Applications Developer.</p>
+
+                    <p class="service-texts">By the end of this course, you will contain knowledge that will use all the concepts taught to make you a full fledged Web Developer/Full Stack Developer.</p>
+        </div>
+
+        <div class="mt-5 mb-5 p-3 text-center">
+            <p class="headingz">TO REGISTER OR JOIN FOR TRAINING</p>
+            <p class="service-sub-headingz">Contact Our Support Team On <span class="nav-green-clr"> +916382698859</span></p>
+    
+            <a href="../pages/contact.html" class="btn what-btn-grn mt-3">CONTACT US NOW</a>
+        </div>
+    </section>
+
+    <!--FOOTER START-->
+    <footer class="clr-teal mt-5 p-3">
+        <div class="text-center">
+          <img src="../Supports/Images/logo1.jfif" alt="" width="75%" />
+        </div>
+        
+        <div class="text-center">
+          <p><b>YaaRaa Technologies</b> – Corporate Training Providers, Computer Training Institute & Coaching Center, Basic Hardware & Networking Course - Software Testing Course India</p>
+        </div>
+  
+        <div class="footer-links text-center">
+          <h3>Quick Links</h3>
+          <a href="../pages/about.html" class="footer-links-link">About</a>
+          <a href="../pages/corporate.html" class="footer-links-link">Corporate Training</a>
+          <a href="../pages/whatwedo.html" class="footer-links-link">What We Do</a>
+          <a href="" class="footer-links-link">Services</a>
+          <a href="../pages/contact.html" class="footer-links-link">Contact</a>
+        </div>
+        
+        <div class="text-center">
+          <h3>Contact</h3>
+          <p><a href="" class="footer-links-link"><i class="far fa-envelope"></i> awesome@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> +916382698859</p>
+        </div>
+      </footer>
+  
+      <section class="mt-1 last-nav">
+        <div class="">
+          <ul class="my-row ls-none" style="margin-right: 1.1em;">
+              <li class="h-icon fb-clr"><a href="" class="header-links"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="h-icon g-clr"><a href="" class="header-links"><i class="fab fa-google"></i></a></li>
+              <li class="h-icon insta-clr"><a href="" class="header-links"><i class="fab fa-instagram"></i></a></li>
+              <li class="h-icon li-clr"><a href="" class="header-links"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div>
+  
+      <div><b>Copyright &copf; 2021 YaaRaa Technologies.</b></div>
+      </section>
+      <!--FOOTER END-->
+  
+      <!--Whats APP ICON FIXED-->
+      <div class="whats-app-fixed"> <a href=""><img src="../Supports/Images/whatsapp-logo.svg" alt="Whats-app LOGO" width="50px"></a> </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../Supports/JS/index.js"></script>
+</body>
+</html>

@@ -198,7 +198,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     background-color: whitesmoke;
-    /* display: none; */
+    display: none;
     position: absolute;
     margin-left: -4.5em;
     width: 240px;
@@ -427,6 +427,11 @@ nav{
     cursor: pointer;
 }
 
+.arrow-iconz:hover{
+    background-color: var(--clr-teal);
+    color: white;
+}
+
 .cardz-sliderz{
     width: 90%;
     /* border: 2px solid red; */
@@ -445,7 +450,7 @@ nav{
     /* border: 2px solid red; */
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
