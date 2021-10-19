@@ -39,3 +39,22 @@ function hide()
     iconz.classList.add('fa-arrow-down');
     iconz.classList.remove('fa-arrow-up');
 }
+
+
+//Corprate Training Hover -----> Mobile onClick
+function ShowCorpHover(e)
+{
+    let elem = document.querySelector("#mob-corp-click");
+
+    if(e.target.value == undefined)
+    {
+        e.target.value = "on";
+        elem.style.display = "block";
+    }
+
+    else{
+        e.target.value = undefined;
+        elem.style.display = "none";
+    }
+
+}

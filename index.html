@@ -29,7 +29,7 @@
             </ul>
         </div>
 
-        <div class="my-row me-5">
+        <div class="my-row me-5 mob-vv">
             <p class="header-links"><i class="far fa-envelope"></i><a href="mailto:yaaraainfosec@gmail.com" class="ms-3 header-email mob-txt">yaaraainfosec@gmail.com</a></p>
             <p class="header-links ms-5"><i class="fas fa-phone"></i> <span class="ms-3 mob-txt">+916382698859</span></p>
         </div>
@@ -48,7 +48,15 @@
           <li class="me-4"><a href="index.html" class="navbar-links pg-active">home</a></li>
           <li class="me-4"><a href="pages/about.html" class="navbar-links">who we are</a></li>
           <li class="me-4"><a href="pages/whatwedo.html" class="navbar-links">what we do</a></li>
-          <li class="me-4"><a href="pages/corporate.html" class="navbar-links">corporate training</a></li>
+          <li class="me-4 corp-hover-showz"><div class="mob-align-corp"><a href="pages/corporate.html" class="navbar-links">corporate training </a><i class="fas fa-chevron-down corp-mob-hover" onclick="ShowCorpHover(event)"></i></div>
+            <div id = "mob-corp-click" class = "corp-hover">
+              <p><a href="" class="hvr-clr">Java Training</a></p>
+              <p><a href="" class="hvr-clr">ms - Net Training</a></p>
+              <p><a href="" class="hvr-clr">Soft Skills Training</a></p>
+              <p><a href="" class="hvr-clr">Behaviorial Training</a></p>
+              <!-- <p><a href="">Sales Training</a></p> -->
+            </div>
+          </li>
           <div class="nav-s-hover">
               <li class="me-4 text-center"><a style="cursor: pointer;" class="navbar-links" onclick="Show()">services <i id = "drop-iconz" class="fas fa-arrow-down"></i></a></li>
                   <div id = "hidden-menu" class="nav-services-hover d-nonez" onmouseleave="hide()">
@@ -57,13 +65,14 @@
                       <p><a href="pages/webDev.html" class = "no-link"><i class="far fa-dot-circle nav-green-clr"></i> Website & Web App Development</a></p>
                   </div>
           </div>
+
           <li class="me-4"><a href="pages/contact.html" class="navbar-links">contact</a></li>
       </ul>
     </nav>
     <!--logo Portion Section-->
 
     <!--Slider Section-->
-    <section class="container-fluid">
+    <section class="container-fluid" style="z-index: -1;">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
