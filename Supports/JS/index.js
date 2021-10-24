@@ -58,3 +58,9 @@ function ShowCorpHover(e)
     }
 
 }
+
+
+function UpdateModel(str)
+{
+    document.querySelector('#careerFormApply').value = str;
+}

@@ -26,117 +26,95 @@
             </ul>
         </div>
 
-        <p class="muted-clr">Do you have any questions?</p>
+        <!-- <p class="muted-clr">Do you have any questions?</p> -->
 
-        <div class="my-row">
-            <p class="header-links"><i class="far fa-envelope"></i><a href="" class="ms-3 header-email mob-txt">awesome@gmail.com</a></p>
+        <div class="my-row me-5 mob-vv">
+            <p class="header-links"><i class="far fa-envelope"></i><a href="" class="ms-3 header-email mob-txt">yaaraainfosec@gmail.com</a></p>
             <p class="header-links ms-5"><i class="fas fa-phone"></i> <span class="ms-3 mob-txt">+916382698859</span></p>
         </div>
 
-        <div class="mob-right-m">
-            <ul class="my-row ls-none">
-                <li class="border-left"><a href="" class="muted-clr header-texts">CONTACT</a></li>
-                <li class="border-left"><a href="" class="muted-clr header-texts">WHAT WE DO</a></li>
-                <li><a href="../pages/about.html" class="muted-clr header-texts">WHO WE ARE</a></li>
-            </ul>
-        </div>
     </header>
 
     <!--logo Portion Section-->
     <nav class="container-fluid my-row-evenly grey-clr shadow">
         <div  class="w-20 mob-nav">
             <img src="../Supports/Images/logo1.jfif" class="img-fluid" alt="YaaRaa Logo" width="100%">
-            <div class="nav-toogle mt-3">
+            <div class="nav-toogle mt-2">
                 <i class="fas fa-bars fa-2x nav-toogle-btn" onclick="toogleNav()"></i>
            </div>
         </div>
 
         <ul class="ls-none my-row p-t d-hidden hide" id = "nav-item-list">
-            <li class="me-4"><a href="../index.html" class="navbar-links">home</a></li>
-            <li class="me-4"><a href="../pages/about.html" class="navbar-links">who we are</a></li>
-            <li class="me-4"><a href="" class="navbar-links">what we do</a></li>
-            <li class="me-4"><a href="" class="navbar-links">corporate training</a></li>
-            <li class="me-4"><a href="../pages/services.html" class="navbar-links pg-active">services</a></li>
-            <li class="me-4"><a href="../pages/contact.html" class="navbar-links">contact</a></li>
-        </ul>
+          <li class="me-4"><a href="../index.html" class="navbar-links">home</a></li>
+          <li class="me-4"><a href="../pages/about.html" class="navbar-links">who we are</a></li>
+          <li class="me-4"><a href="../pages/whatwedo.html" class="navbar-links">what we do</a></li>
+          <li class="me-4 corp-hover-showz"><div class="mob-align-corp"><a href="../pages/corporate.html" class="navbar-links">corporate training </a><i class="fas fa-chevron-down corp-mob-hover" onclick="ShowCorpHover(event)"></i></div>
+            <div id = "mob-corp-click" class = "corp-hover">
+              <p><a href="../pages/java.html" class="hvr-clr">Java Training</a></p>
+              <p><a href="../pages/msNet.html" class="hvr-clr">MS - Net Training</a></p>
+              <p><a href="../pages/SoftSkills.html" class="hvr-clr">Soft Skills Training</a></p>
+              <p><a href="../pages/Behaviorial.html" class="hvr-clr">Behaviorial Training</a></p>
+              <p><a href="../pages/Behaviorial.html" class="hvr-clr">Python Training</a></p>
+              <p><a href="../pages/Behaviorial.html" class="hvr-clr">Data Science</a></p>
+              <p><a href="../pages/Behaviorial.html" class="hvr-clr">Robotics</a></p>
+              <!-- <p><a href="">Sales Training</a></p> -->
+            </div>
+          </li>
+          
+          <li class="me-4 text-center"><a href="../pages/services.html" class="navbar-links pg-active">Other services</a></li>
+          <li class="me-4"><a href="../pages/careers.html" class="navbar-links">careers</a></li>
+          <li class="me-4"><a href="../pages/contact.html" class="navbar-links">contact</a></li>
+      </ul>
     </nav>
     <!--logo Portion Section-->
 
 
     <!--+++++++++++++++++Service Section++++++++++++++++-->
     <section class="about-section">
-        <div class="text-center">
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="" class="img-fluid">
+
+        <div class="mt-5 text-center">
+            <p class="headingz">OTHER SERVICES</p>
+            <p class="service-sub-headingz text-black">Apart from Corporate Training's, we also provide the following Service's</p>
         </div>
 
-        <div class="mt-5">
-            <p class="headingz">SERVICES</p>
+        <div class="career-cardz-deck mt-5">
 
-            <ol>
-                <li class="service-sub-headingz">
-                    <p class="">Corporate IT Training :</p>
-                    <p class="service-texts">Corporate training is the process of improving necessary job skills and knowledge of a fresh graduate through an organized method of instruction. It usually takes the form of online or offline instructional content (textual or video), online or face-to-face lectures and mentorship, actual or virtual group interaction, and/or online or physical lab exercises or practical projects.</p>
+            <a href="../pages/digitalMarketing.html" class="shadow my-bg-digital career-cardz service-cards-align">
+                <div>
+                    <p><i class="fas fa-poll fa-3x"></i></p>
+                    <p class="career-heading">Digital Marketing</p>
+                    <p class="badge shadow my-bg-digital text-white p-3">See more</p>
+                </div>
+            </a>
 
-                    <p class="text-muted">Why YaaRaa Technologies Is Different</p>
-                    <p class="service-texts">Our top corporate training courses are unique because</p>
-                    <ul class="service-texts">
-                        <li>Customized and designed by expert trainers</li>
-                        <li>Offer potential development courses</li>
-                        <li>Emphasize personality development</li>
-                        <li>Provide innovative solutions for soft skill development</li>
-                        <li>High-quality training courses at reasonable prices</li>
-                    </ul>
+            <a href="../pages/appdev.html" class="shadow career-cardz my-bg-appdev service-cards-align">
+                <div>
+                    <p><i class="fas fa-mobile-alt fa-3x"></i></p>
+                    <p class="career-heading">Mobile Application Development</p>
+                    <p class="badge shadow my-bg-appdev text-white p-3">See more</p>
+                  </div>
+            </a>
 
-                    <p class="text-muted mt-3">YaaRaa Technologies Mission</p>
-                    <p class="service-texts">We are committed to providing leadership skills and soft skill training of the highest quality to ensure both organizational and individual growth. We employ creative, analytical, and the latest techniques to help our clients achieve their desired goals.</p>
-                </li>
+            <a href="../pages/webDev.html" class="shadow career-cardz my-bg-webdev service-cards-align">
+                <div>
+                    <p><i class="fas fa-globe fa-3x"></i></p>
+                    <p class="career-heading">Website & Web Application Development</p>
+                    <p class="badge shadow my-bg-webdev text-white p-3">See more</p>
+                </div>
+            </a>
 
-                <li class="service-sub-headingz mt-4">
-                    <p class="">Digital Marketing:</p>
-                    <p class="service-texts">Why is digital marketing important? Each organization will have diverse explicit objectives at the top of the priority list, however most are attempting to accomplish development by arriving at more buyers and persuading them to buy. To do this adequately, you need to exploit all the most significant showcasing assets and advancements, and in the cutting edge world, the web best that rundown. This makes each business needing computerized advertising. It’s necessary you understand the benefits of digital marketing for businesses, which include:</p>
+          </div>
 
-                    <ul class="service-texts">
-                        <li><b>Affordability:</b> Digital marketing is considerably less expensive than other marketing methods. Ad spend in digital marketing is lower than the traditional method</li>
-                        <li><b>Mobile Access:</b> Most of the people have a smartphone, so digital marketing helps you reach them easily. With remarketing ads, email and text marketing, and social media – you can be in front of your audience while they use many different apps on their mobile.</li>
-                        <li><b>Flexibility:</b> By effectively using digital marketing you open up a wide range of possibilities for future publicity. With digital marketing, <u>you also have the flexibility of redefining the campaign based on its performance</u>.</li>
-                        <li><b>Expansion:</b> Numerous customers do practically the entirety of their shopping on the web. Computerized showcasing allows you to speak to these individuals and in this way extend the span of your organization. Between Google Shopping Ads and brand mindfulness crusades, you can extend your image acknowledgment and lift deals</li>
-                        <li><b>Multimedia:</b> Clients will in general engage more with marketing materials that combine multiple types of content, including photos, video clips, and audio. It is far easier to incorporate all these content types into digital marketing than any other type of publicity – and it is vital.</li>
-                        <li><b>Interactivity:</b> Via Digital Marketing, you could directly communicate with the customers who see your content.</li>
-                        <li><b>Tracking:</b> Another key factor is Digital Marketing enables in tracking the potential customer, by watching the kind of adds that they have recently seen and the online purchase that they have made. This tells you which marketing method best suits and has the flexibility to refine and improve our strategy.</li>
-                        <li><b>Influence Engagement:</b> A large number of the most powerful figures in present day culture advance themselves on the web or through web-based media. Advanced showcasing permits you to draw in with these influencers and gain their regard. In the event that you do your best, you can get them to underwrite you, driving their adherents to become clients and spread brand mindfulness.</li>
-                    </ul>
-                </li>
+          <div class="career-cardz-deck mt-3">
 
-                <li class="service-sub-headingz mt-4">
-                    <p class="">Mobile App Development:</p>
+            <a href="../pages/itStaffing.html" class="shadow career-cardz service-cards-align my-bg-itStaff">
+                <div>
+                    <p><i class="fas fa-chalkboard-teacher fa-3x"></i></p>
+                    <p class="career-heading">It Staffing</p>
+                    <p class="badge shadow my-bg-itStaff text-white p-3">See more</p>
+                </div>
+            </a>
 
-                    <p class="text-muted">DELIVERING YaaRaa MOBILE APP DEVELOPMENT SERVICES</p>
-                    <p class="service-texts">We help any brand design and build exceptional digital products, enabling seamless user experiences across all modern platforms and devices.</p>
-
-                    <p class="text-muted">TALK TO US</p>
-                    <p class="service-texts">+916382698859</p>
-
-                    <p class="text-muted">OUR HIGH-END MOBILE APP DEVELOPMENT SERVICES</p>
-                    <p class="service-texts">We offer a full cycle of application design, integration and management services. Whether it is a consumer oriented app or a transformative enterprise-class solution, the company leads the entire mobile app development process from ideation and concept to delivery, and to ongoing ongoing support.
-
-                        <ul class="service-texts">
-                            <li>Custom iOS and Android apps development</li>
-                            <li>Native and cross-platform solutions</li>
-                            <li>Second platform app development</li>
-                            <li>UI/UX design</li>
-                            <li>Consulting and prototyping</li>
-                            <li>Automated QA and testing</li>
-                            <li>Power management, notification and geofencing</li>
-                            <li>Embedded Android & AOSP customizations</li>
-                            <li>Maintenance and post-warranty support</li>
-                        </ul>
-                    </p>
-                </li>
-
-                <!-- <li class="service-sub-headingz mt-4">
-                    <p class="">Digital Marketing:</p>
-                </li> -->
-            </ol>
         </div>
     </section>
     <!--+++++++++++++++++Service Section++++++++++++++++-->
