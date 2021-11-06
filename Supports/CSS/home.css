@@ -45,6 +45,10 @@
     background-color: rgb(40,103,178);
 }
 
+.blu-tl-clr{
+    color: var(--clr-teal);
+}
+
 .nav-green-clr{
     color: #18ba60;
 }
@@ -832,6 +836,8 @@ footer > div{
 .services-help{
     position: fixed;
     bottom: 20px;
+    right: 20px;
+    z-index: 1;
 }
 
 .help-active{
@@ -1062,3 +1068,94 @@ footer > div{
 
 
 /*+++++++++++++++++++++++++++++++++++++ CAREERS SECTION +++++++++++++++++++++++++++++++++++=*/
+
+
+/*++++++++++++++++++++++++ WEB DEV PAGE +++++++++++++++++++++++++++++++++++*/
+.timeline{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.timeline::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 1px;
+    height: 100%;
+    margin-left: -33px;
+}
+
+.my-tmbox{
+    /* width: 80%; */
+    padding: 1em;
+    position: relative;
+}
+
+.my-tmbox1::before{
+    position: absolute;
+    content: "\f3cd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 0.2em 0em;
+    margin-left: -2.2em;
+    color:#15416E;
+}
+
+.my-tmbox2::before{
+    position: absolute;
+    content: "\f118";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 0.2em 0em;
+    margin-left: -2.35em;
+    color:#15416E;
+}
+
+.my-tmbox3::before{
+    position: absolute;
+    content: "\f0ae";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 0.2em 0em;
+    margin-left: -2.35em;
+    color:#15416E;
+}
+
+.my-tmbox4::before{
+    position: absolute;
+    content: "\f156";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 0.2em 0em;
+    margin-left: -2.2em;
+    color:#18ba60;
+}
+
+.tmbox-heading
+{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.wd-iconz{
+    background-color: var(--clr-teal);
+    color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.wd-cardz:hover .wd-iconz{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/*++++++++++++++++++++++++ WEB DEV PAGE +++++++++++++++++++++++++++++++++++*/
