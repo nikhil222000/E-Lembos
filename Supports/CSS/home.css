@@ -269,9 +269,10 @@ nav{
     padding-left: 2em;
 }
 
-.corp-hover > p:hover {
+.corp-hover > p:hover{
     width: 100%;
     background-color: white;
+    transition: all 0.2s;
 }
 
 .corp-hover-showz:hover .corp-hover{
@@ -934,6 +935,10 @@ footer > div{
     font-weight: bold;
 }
 
+.btn-fontz-lg{
+    font-size: 1.6rem;
+}
+
 .what-btn-grn:hover{
     background-color: var(--clr-teal);
     color: white;
@@ -1159,3 +1164,25 @@ footer > div{
 }
 
 /*++++++++++++++++++++++++ WEB DEV PAGE +++++++++++++++++++++++++++++++++++*/
+
+/*++++++++++++++++++++++++ DIGITAL MARKETING PAGE +++++++++++++++++++++++++++++++++++*/
+
+.dm-box-headings{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--clr-teal);
+}
+
+.dm-icon-pos
+{
+    color:#4267B2;
+    padding-right: 0.2em;
+}
+
+.dm-icon-txt-align{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*++++++++++++++++++++++++ DIGITAL MARKETING PAGE +++++++++++++++++++++++++++++++++++*/
