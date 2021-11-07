@@ -271,7 +271,12 @@ nav{
 
 .corp-hover > p:hover{
     width: 100%;
-    background-color: white;
+    background-color: var(--clr-teal);
+    transition: all 0.2s;
+}
+
+.corp-hover > p:hover > a{
+    color: white;
     transition: all 0.2s;
 }
 
@@ -731,6 +736,7 @@ footer > div{
     bottom: 10px;
     right: 10px;
     width: fit-content;
+    z-index: 1;
     /* border: 2px solid red; */
 }
 
