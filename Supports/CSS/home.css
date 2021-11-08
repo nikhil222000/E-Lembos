@@ -511,6 +511,16 @@ nav{
 /*-------------------------------------------For HeaDERS AND nAVBARS --------------------------------------------*/
 
 
+
+/*+++++++++++++++++++++++++++++++HHHHHHHHHHHHHEEEEEEEEEEERRRRRRRRRRRROOOOOOOOOOOOOOOOOOOOO*/
+.hero-section{
+    background: url(../Images/homeBG.jpg);
+    height: 90vh;
+}
+/*+++++++++++++++++++++++++++++++HHHHHHHHHHHHHEEEEEEEEEEERRRRRRRRRRRROOOOOOOOOOOOOOOOOOOOO*/
+
+
+
 /*----------- CARD's -------------*/
 .card-setz{
     margin: 15vmin 0;
@@ -579,7 +589,6 @@ nav{
 .cardz-slider-sec{
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 15vmin;
 }
 .contentz-slider{
     display: flex;
@@ -675,6 +684,30 @@ nav{
 }
 /*Corporate Clients CSS END*/
 
+/*New Section HOme ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.home-show-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-show-align > div {
+    margin: 0 1em;
+    width: 30%;
+}
+
+@media(max-width: 900px)
+{
+    .home-show-align{
+        flex-direction: column;
+    }
+    
+    .home-show-align > div {
+        margin: 0 0em;
+        width: 100%;
+    }
+}
+/*New Section HOme ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*Footer Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 footer{
