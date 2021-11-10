@@ -572,11 +572,11 @@ nav{
 @media(max-width: 600px)
 {
     .intro-headingz{
-        font-size: 1rem;
+        text-align: center;
     }
     
     .intro-yellow-txt{
-        font-size: 0.8rem;
+        text-align: center;
     }
     
     .intro-white-back{
@@ -585,12 +585,14 @@ nav{
 
     .intro-text-Contents{
         width: 100%;
-        /* border: 2px solid black; */
+        padding: 1em;
+        background: rgb(91, 200, 219);
     }
 
     .hero-section{
-        padding: 1em;
-        display: flex;
+        padding: 0em;
+        background: none;
+        display: unset;
         width: 100%;
         justify-content: unset;
         align-items:unset;
