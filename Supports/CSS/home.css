@@ -955,6 +955,85 @@ footer > div{
 
 
 /*+++++++++++++++++++++++++++++++++ ABOUT PAGE START ++++++++++++++++++++++++++++++++++++*/
+.about-banner{
+    margin-top: 0vmin;
+    background: url(../Images/AboutIcns/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 80vh; */
+}
+
+.banner-content-align{
+    /* border: 2px solid red; */
+    width: 60%;
+    padding: 3em;
+}
+
+.banner-card-align{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green; */
+    margin-top: 2em;
+}
+
+.banner-card{
+    padding: 0.1em;
+    width: 18%;
+    border-radius: 1em;
+}
+
+.banner-card:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.banner-card-text{
+    font-weight: bold;
+    color: var(--clr-teal);
+}
+
+.abt-banner-text
+{
+    font-size: 1.4rem;
+}
+
+@media(max-width:1000px)
+{
+    .about-banner{
+        background: unset;
+    }
+
+    .banner-content-align{
+        /* border: 2px solid red; */
+        width: 100%;
+        padding: 3em;
+    }
+
+    .banner-card-align{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0em;
+    }
+
+    .banner-card{
+        padding: 0.5em;
+        width: 40%;
+        margin-top: 2em;
+    }
+    
+}
+
+@media(max-width: 500px)
+{
+    .banner-card{
+        padding: 0.5em;
+        width: 60%;
+        margin-top: 2em;
+    }
+}
+
 .about-section{
     width: 90%;
     margin: 0 auto;
