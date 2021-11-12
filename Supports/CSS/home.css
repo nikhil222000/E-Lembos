@@ -945,6 +945,21 @@ footer > div{
     /* border: 2px solid red; */
 }
 
+/* .whats-app-fixed::before{
+    content: "Whatsapp us";
+    background-color: white;
+    padding: 0.5em;
+    color: var(--clr-teal);
+    font-weight: bold;
+    border-radius: 1em;
+    opacity: 0;
+} */
+
+.whats-app-fixed:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
 /* .whats-app-fixed > a > i{
     color:#25D366;
 } */
