@@ -719,16 +719,52 @@ nav{
 /*New Section HOme ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*Team Contents Sliderz*/
+.whole-staff-wrapper{
+    /* border: 2px solid green; */
+    padding: 1em;
+}
+
+.staff-name{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0.3em;
+    color: var(--clr-teal);
+}
+
+.staff-role{
+    margin: 0em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.image-circle-container{
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /* padding: 1em; */
+}
+
+.image-circle-container > img{
+    width: 100%;
+}
 .cardz-slider-sec{
     width: 90%;
     margin: 0 auto;
 }
-.contentz-slider{
+
+/* .contentz-slider{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 .arrow-iconz{
     /* color: #18ba60; */
@@ -744,18 +780,8 @@ nav{
     color: white;
 }
 
-.cardz-sliderz{
-    width: 90%;
-    /* border: 2px solid red; */
-    padding-left: 5em;
-}
-
-.cardz-sliderz > div{
-    margin: 0 1em;
-}
-
-.cardz-sliderz > div > img {
-    width: 30%;
+.cardz-slider > div > img {
+    width: 100%;
 }
 
 .slide-arrow-keys{
@@ -810,6 +836,10 @@ nav{
         width: 80%;
         margin: 0 auto;
         padding-left: 2em;
+    }
+
+    .whole-staff-wrapper{
+        margin-left: -1.5em;
     }
 }
 /*Team SLIDER CSS END*/
