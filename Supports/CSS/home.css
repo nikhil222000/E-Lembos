@@ -436,7 +436,9 @@ nav{
     .mob-vv{
         text-align: center;
         /* border: 2px solid yellow; */
+        width: 100%;
         margin: 0 auto;
+        font-size: 0.8rem;
     }
 
     .mob-align-corp{
@@ -1605,3 +1607,13 @@ footer > div{
     
 }
 /*Corporate Page texts ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/********************************* ROBOTICS PAGE *************************************/
+.robo-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+/********************************* ROBOTICS PAGE *************************************/
