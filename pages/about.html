@@ -101,37 +101,39 @@
 
         <div class = "mt-5">
             <p class="abt-headingz">Register for Training</p>
-            <form action="" class="mt-3 abt-form">
+            <form action="" class="mt-3 abt-form" onsubmit="SubmitHandler(event)" id="frm" novalidate>
                 <div class="row">
                     <div class="mb-3 col-sm-5">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="Name" required>
                       </div>
                     <div class="col-sm-1"></div>
                     <div class="mb-3 col-sm-5">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" name="Email" required>
                       </div>
                 </div>
 
                 <div class="row">
-                    <div class="mb-3 col-sm-5">
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Contact">
+                    <div class="mb-2 col-sm-5">
+                        <input type="number" class="form-control" id="contact" placeholder="Contact" name="Contact" onfocusout="phoneCheck(event)" required pattern="[0-9]{10}">
+                        <small id="contact-err" class = "text-danger"></small>
                       </div>
                     <div class="col-sm-1"></div>
                     <div class="mb-3 col-sm-5">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject" name="Subject" required>
                     </div>
                 </div>
 
 
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="Message"></textarea>
                   </div>
                   
-                  <button class="btn abt-btn">SEND MAIL</button>
-
+                  <button class="btn abt-btn" onclick="SubmitHandler(event)">SEND MAIL</button>
+                  <small class="text-success" id="msg"></small>
             </form>
         </div>
+        
     </section>
     <!--About Section-->
 
