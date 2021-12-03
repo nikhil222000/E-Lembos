@@ -84,10 +84,6 @@ function Send(e)
         .catch(err => {console.error("Error: ", err.message)})
         c += 1;
     }
-
-    else{
-        document.getElementById("msg").innerText = "Response already recorded";
-    }
 }
 
 function SubmitHandler() {
