@@ -73,6 +73,7 @@ function Send(e)
 {
     e.preventDefault();
     const gs = "https://script.google.com/macros/s/AKfycbwXYlaGr1oRtkuoZ6r9wSllBs5vd4dvD33ePLbDqCewbDKYoc0G0yCkO-xkD9-rLfvQ/exec";
+    document.querySelector('#spinner-enquiry').classList.remove('spinner-hide');
     let form = document.querySelector('#frm');
     //console.log(form);
 
@@ -80,7 +81,11 @@ function Send(e)
     {
         //console.log("Recieved");
         fetch(gs, {method: "POST", body: new FormData(form)})
-        .then(res => {document.getElementById("msg").innerText = "Response Recorded"; alert("Thanks for contacting us...! We will contact you soon");})
+        .then(res => {
+          document.querySelector('#spinner-enquiry').classList.add('spinner-hide');
+          document.getElementById("msg").innerText = "Response Recorded"; 
+          alert("Thanks for contacting us...! We will contact you soon");
+        })
         .catch(err => {console.error("Error: ", err.message)})
         c += 1;
     }
@@ -118,12 +123,16 @@ function CareerFrmInsert(e)
     e.preventDefault();
 
     const db = "https://script.google.com/macros/s/AKfycbw1neEvmW0OA5pVlraCTdbH8sSD5qux5ui4b5KhZr1RfpnsEsVc-GaiT99npA5CusNx2A/exec";
+    document.querySelector('#spinner-career').classList.remove('spinner-hide');
     let form = document.querySelector("#career-frm");
 
     if(cc < 1)
     {
         fetch(db, {method: "POST", body: new FormData(form)})
-        .then(res => {alert("Thanks for contacting us...! We will contact you soon")})
+        .then(res => {
+          document.querySelector('#spinner-career').classList.add('spinner-hide'); 
+          alert("Thanks for contacting us...! We will contact you soon");
+        })
         .catch(err => {console.error("Error: ", err.message)}) 
         cc += 1;  
     }
