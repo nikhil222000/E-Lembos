@@ -516,7 +516,7 @@ nav{
 
 /*+++++++++++++++++++++++++++++++HHHHHHHHHHHHHEEEEEEEEEEERRRRRRRRRRRROOOOOOOOOOOOOOOOOOOOO*/
 .hero-section{
-    background: url(../Images/introhome2.jpg);
+    background: url(../Images/introhome.jpeg);
     height: auto;
     padding: 18em;
     display: flex;
@@ -1619,5 +1619,23 @@ footer > div{
 /********************************* ROBOTICS PAGE *************************************/
 
 .spinner-hide{
+    display: none;
+}
+
+
+.loaders{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vanish{
     display: none;
 }

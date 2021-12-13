@@ -183,3 +183,15 @@ function phoneCheck(e)
         document.getElementById("contact").style.color = "black";
     }
 }
+
+
+
+//Loader
+// window.addEventListener('load', () => {
+//   document.getElementById("loader").classList.add("vanish");
+// })
+
+function disappearLoader()
+{
+  document.getElementById("loader").classList.add("vanish");
+}

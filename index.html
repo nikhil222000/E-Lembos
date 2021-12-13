@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="Supports/CSS/slick.css">
     <link rel="stylesheet" type="text/css" href="Supports/CSS/slick-theme.css">
 </head>
-<body>
+<body onload="disappearLoader()">
 
     <header class="clr-teal container-fluid my-row-evenly p-t">
         <div class="">
@@ -72,7 +72,7 @@
     <!--logo Portion Section-->
 
     <!--Intro Section-->
-    <section class="hero-section">
+    <section class="hero-section" onlo>
       <div class = "intro-text-Contents">
         <p class="intro-headingz">BEST DEMANDING COURSES</p>
         <P class="intro-yellow-txt mt-2">FOR YOUR CAREER BUILDING</P>
@@ -357,6 +357,20 @@
     <div><b>Copyright &copy; 2021 YaaRaa Technologies.</b></div>
     </section>
     <!--FOOTER END-->
+
+    <section class="loaders" id = "loader">
+      <div class="spinner-grow text-danger me-2" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <div class="spinner-grow text-warning me-2" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </section>
 
     <!--Whats APP ICON FIXED-->
     <div class="whats-app-fixed"> <a href="https://wa.me/+916382698859" target="_"><img src="Supports/Images/whatsapp-logo.svg" alt="Whats-app LOGO" width="50px"></a> </div>
