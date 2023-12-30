@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E LEMBOS LIFE SCIENCES</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Particles.js library for interactive particle background -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="icon" href="Supports/Images/onlylogo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .background-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .background-image {
+      margin-top: 10%;
+      width: 25%;
+      opacity: 0.3;
+      max-width: 100%;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    header {
+      background-color: #A5464C;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      background-color: #A5464C;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #64B5F6;
+      color: white;
+    }
+
+    section {
+      padding: 35px 0;
+    }
+
+    .container {
+
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+    }
+    .home{
+      padding-top: 120px  !important ;
+    }
+    h2 {
+      color: #A5464C;
+    }
+
+    p {
+      color: #666;
+    }
+
+    .product-gallery {
+      overflow-x: scroll;
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .product-gallery .product-card {
+      display: inline-block;
+      margin-right: 10px;
+      max-width: 300px;
+    }
+
+    .product-gallery .product-card img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+
+    .gallery-arrows-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px; /* Adjust margin as needed */
+    }
+
+    .gallery-arrow {
+      font-size: 24px;
+      cursor: pointer;
+      margin: 0 10px; /* Adjust margin between arrows as needed */
+    }
+
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .product-gallery {
+      max-height: 350px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .product-gallery .product-card {
+      display: inline-block;
+      margin-right: 10px; /* Adjust the spacing between cards */
+    }
+
+    .gallery-arrow {
+      font-size: 24px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form form {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.contact-form button {
+  background-color: #A5464C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #64B5F6;
+}
+
+
+    /* Add more styles as needed */
+
+  </style>
+</head>
+<body>
+
+  <div class="background-container">
+    <img class="background-image" src="Supports/Images/onlylogo.png" alt="Company Logo">
+  </div>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>E LEMBOS LIFE SCIENCES</h1>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="container">
+        <h2>Welcome to E Lembos Life Sciences</h2>
+        <p>At E Lembos Life Sciences, we proudly stand as your unwavering ally in the realm of innovative Pharma Marketing solutions, marking our indelible presence since the inception of our journey in 2022. Over the years, our commitment to excellence has propelled us to the forefront of transforming the pharmaceutical landscape, setting new standards of distinction.</p>
+
+        <p>Our ethos revolves around a pioneering approach that seamlessly integrates cutting-edge technology, strategic marketing insights, and a profound understanding of the intricate dynamics within the healthcare industry. This amalgamation of expertise allows us to craft solutions that not only meet the expectations of our clients but consistently surpass them.</p>
+
+        <p>Embracing the spirit of innovation, we have continually delivered high-impact solutions that resonate with the evolving needs of the pharmaceutical domain. Our dedication goes beyond conventional boundaries, envisioning a future where each stride forward is a resolute step towards a healthier, brighter, and more promising tomorrow.</p>
+
+        <p>Join us on this transformative journey, where innovation knows no bounds, and every endeavor is a testament to our enduring commitment to advancing healthcare through progressive Pharma Marketing solutions. As we navigate the intricate tapestry of challenges and opportunities, we invite you to be an integral part of this narrative, shaping the future of healthcare alongside E Lembos Life Sciences.</p>
+    </div>
+</section>
+
+
+<section id="about">
+  <div class="container" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p>Founded in 2022, E Lembos Life Sciences has embarked on a transformative journey dedicated to revolutionizing Pharma Marketing. Committed to excellence, we have etched our presence in the industry as innovators and trailblazers.</p>
+
+      <p>Our unwavering commitment to providing top-notch solutions in medicine packaging is rooted in a deep-seated dedication to ensuring the safety and integrity of pharmaceutical products. We understand the critical role that packaging plays in the pharmaceutical ecosystem, and our mission is to redefine industry standards through a perfect blend of precision, creativity, and innovation.</p>
+
+      <p>At the core of our philosophy is the belief that medicine packaging is not just a functional necessity but an opportunity to infuse vibrancy and ingenuity. We aim to bring a splash of color and innovation to the world of medicine packaging, transforming it from a mere protective covering into a powerful medium that communicates brand identity and resonates with end-users.</p>
+
+      <p>As a dynamic force in the Pharma Marketing landscape, we continually push the boundaries of what is possible. Our journey is marked by a relentless pursuit of excellence, a commitment to pushing the envelope of creativity, and a passion for making a positive impact on the healthcare industry.</p>
+
+      <p>Join us in our mission to redefine Pharma Marketing, where every solution we provide is a testament to our commitment to excellence, safety, and innovation. E Lembos Life Sciences invites you to explore the boundless possibilities that arise when dedication meets ingenuity.</p>
+  </div>
+</section>
+
+
+<section id="products">
+  <div class="container" data-aos="fade-up">
+    <h2>Our Innovative Products</h2>
+
+    <div class="product-gallery">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product1.jpeg" alt="Product 1">
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product2.jpeg" alt="Product 2">
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product3.jpeg" alt="Product 3">
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product4.jpeg" alt="Product 4">
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product5.jpeg" alt="Product 5">
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product6.jpeg" alt="Product 6">
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product7.jpeg" alt="Product 7">
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product8.jpeg" alt="Product 8">
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product9.jpeg" alt="Product 9">
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product10.jpeg" alt="Product 10">
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product11.jpeg" alt="Product 11">
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product12.jpeg" alt="Product 12">
+      </div>
+
+      <!-- Product 13 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product13.jpeg" alt="Product 13">
+      </div>
+
+      <!-- Product 14 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product14.jpeg" alt="Product 14">
+      </div>
+
+      <!-- Product 15 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product15.jpeg" alt="Product 15">
+      </div>
+
+      <!-- Product 16 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product16.jpeg" alt="Product 16">
+      </div>
+
+      <!-- Product 17 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product17.jpeg" alt="Product 17">
+      </div>
+
+      <!-- Product 18 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product18.jpeg" alt="Product 18">
+      </div>
+
+      <!-- Product 19 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product19.jpeg" alt="Product 19">
+      </div>
+    </div>
+
+    <div class="gallery-arrows-container">
+      <div class="gallery-arrow" onclick="scrollGallery(-1)">❮</div>
+      <div class="gallery-arrow" onclick="scrollGallery(1)">❯</div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+      <form
+        action="https://formspree.io/f/mpzvzqyr"
+        method="POST"
+      >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 E LEMBOS LIFE SCIENCES</p>
+  </footer>
+
+  <script>
+    // Particles.js configuration
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: '#2196F3'
+        },
+        shape: {
+          type: 'circle',
+          stroke: {
+            width: 0,
+            color: '#2196F3'
+          },
+          polygon: {
+            nb_sides: 5
+          },
+          image: {
+            src: 'img/github.svg',
+            width: 100,
+            height: 100
+          }
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false
+          }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.6,
+            sync: false
+          }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#2196F3',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200
+          }
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse'
+          },
+          onclick: {
+            enable: true,
+            mode: 'push'
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1
+            }
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 6,
+            speed: 3
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4
+          },
+          push: {
+            particles_nb: 4
+          },
+          remove: {
+            particles_nb: 2
+          }
+        }
+      },
+      retina_detect: true
+    });
+
+    // Initialize AOS (Animate On Scroll)
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+
+    // Add smooth scrolling for anchor links
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $($(this).attr('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+    function scrollGallery(direction) {
+      const gallery = document.querySelector('.product-gallery');
+      gallery.scrollLeft += direction * (gallery.clientWidth / 2); // Adjust the scroll distance
+    }
+  </script>
+
+</body>
+</html>
