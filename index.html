@@ -1,472 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="title" content="YaaRaa Technologies">
-    <meta name="description" content="YaaRaa Technologies, south-tamilnadu, madurai, yaaraa technologies provide best demanding courses for career building, also provide a lot of technology related services.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - YaaRaa</title>
-    <link rel="icon" href="Supports/Images/titleImg.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E LEMBOS LIFE SCIENCES</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Particles.js library for interactive particle background -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="icon" href="Supports/Images/onlylogo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
 
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      line-height: 1.6;
+      color: #333;
+    }
 
-    <link rel="stylesheet" href="Supports\CSS\index.css">
-    <link rel="stylesheet" href="Supports\CSS\home.css">
+    .background-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
 
-    <!--Slick SLiders CSS-->
-    <link rel="stylesheet" type="text/css" href="Supports/CSS/slick.css">
-    <link rel="stylesheet" type="text/css" href="Supports/CSS/slick-theme.css">
+    .background-image {
+      margin-top: 10%;
+      width: 25%;
+      opacity: 0.3;
+      max-width: 100%;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    header {
+      background-color: #A5464C;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      background-color: #A5464C;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #64B5F6;
+      color: white;
+    }
+
+    section {
+      padding: 35px 0;
+    }
+
+    .container {
+
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+    }
+    .home{
+      padding-top: 120px  !important ;
+    }
+    h2 {
+      color: #A5464C;
+    }
+
+    p {
+      color: #666;
+    }
+
+    .product-gallery {
+      overflow-x: scroll;
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .product-gallery .product-card {
+      display: inline-block;
+      margin-right: 10px;
+      max-width: 300px;
+    }
+
+    .product-gallery .product-card img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+
+    .gallery-arrows-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px; /* Adjust margin as needed */
+    }
+
+    .gallery-arrow {
+      font-size: 24px;
+      cursor: pointer;
+      margin: 0 10px; /* Adjust margin between arrows as needed */
+    }
+
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .product-gallery {
+      max-height: 350px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .product-gallery .product-card {
+      display: inline-block;
+      margin-right: 10px; /* Adjust the spacing between cards */
+    }
+
+    .gallery-arrow {
+      font-size: 24px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form form {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.contact-form button {
+  background-color: #A5464C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #64B5F6;
+}
+
+
+    /* Add more styles as needed */
+
+  </style>
 </head>
+<body>
 
-<body onload="disappearLoader()">
+  <div class="background-container">
+    <img class="background-image" src="Supports/Images/onlylogo.png" alt="Company Logo">
+  </div>
 
-    <header class="clr-teal container-fluid my-row-evenly p-t">
-        <div class="">
-            <ul class="my-row ls-none" style="margin-right: 1.1em;">
-                <li class="h-icon fb-clr"><a href="https://www.facebook.com/yaaraatechnologies" target="_" class="header-links"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="h-icon g-clr"><a href="" class="header-links"><i class="fab fa-google"></i></a></li>
-                <li class="h-icon insta-clr"><a href="" class="header-links"><i class="fab fa-instagram"></i></a></li>
-                <li class="h-icon li-clr"><a href="https://www.linkedin.com/company/yaaraa-technologies/" target="_" class="header-links"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
+  <div id="particles-js"></div>
 
-        <div class="my-row me-5 mob-vv">
-            <p class="header-links"><a href="mailto:yaaraatechnologies@gmail.com" class="footer-links-link"><i class="far fa-envelope me-2"></i> yaaraatechnologies@gmail.com</a></p>
-            <p class="header-links ms-5"><i class="fas fa-phone"></i> <span class="ms-2 mob-txt">+916382698859</span></p>
-        </div>
-    </header>
+  <header>
+    <h1>E LEMBOS LIFE SCIENCES</h1>
+  </header>
 
-    <!--logo Portion Section-->
-    <nav class="container-fluid my-row-evenly grey-clr shadow">
-        <div  class="w-20 mob-nav">
-            <img src="Supports/Images/logo1.jfif" class="img-fluid" alt="YaaRaa Logo" width="100%">
-            <div class="nav-toogle mt-2">
-                <i class="fas fa-bars fa-2x nav-toogle-btn" onclick="toogleNav()"></i>
-           </div>
-        </div>
+  <nav>
+    <div class="container">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-        <ul class="ls-none my-row p-t d-hidden hide" id = "nav-item-list">
-          <li class="me-4"><a href="index.html" class="navbar-links pg-active">home</a></li>
-          <li class="me-4"><a href="pages/about.html" class="navbar-links">who we are</a></li>
-          <!-- <li class="me-4"><a href="pages/whatwedo.html" class="navbar-links">what we do</a></li> -->
-          <li class="me-4 corp-hover-showz"><div class="mob-align-corp"><a href="pages/corporate.html" class="navbar-links">corporate training </a><i class="fas fa-chevron-down corp-mob-hover" onclick="ShowCorpHover(event)"></i></div>
-            <div id = "mob-corp-click" class = "corp-hover">
-              <p><a href="pages/java.html" class="hvr-clr">Java Training</a></p>
-              <p><a href="pages/msNet.html" class="hvr-clr">MS - Net Training</a></p>
-              <p><a href="pages/SoftSkills.html" class="hvr-clr">Soft Skills Training</a></p>
-              <p><a href="pages/Behaviorial.html" class="hvr-clr">Behaviorial Training</a></p>
-              <p><a href="pages/python.html" class="hvr-clr">Python Training</a></p>
-              <p><a href="pages/dataScience.html" class="hvr-clr">Data Science</a></p>
-              <p><a href="pages/robotics.html" class="hvr-clr">Robotics</a></p>
-              <!-- <p><a href="">Sales Training</a></p> -->
-            </div>
-          </li>
-          
-          <li class="me-4 text-center"><a href="pages/services.html" class="navbar-links">Other services</a></li>
-          <li class="me-4"><a href="pages/careers.html" class="navbar-links">careers</a></li>
-          <li class="me-4"><a href="pages/contact.html" class="navbar-links">contact</a></li>
-      </ul>
-    </nav>
-    <!--logo Portion Section-->
+  <section id="home" class="home">
+    <div class="container">
+        <h2>Welcome to E Lembos Life Sciences</h2>
+        <p>At E Lembos Life Sciences, we proudly stand as your unwavering ally in the realm of innovative Pharma Marketing solutions, marking our indelible presence since the inception of our journey in 2022. Over the years, our commitment to excellence has propelled us to the forefront of transforming the pharmaceutical landscape, setting new standards of distinction.</p>
 
-    <!--Intro Section-->
-    <section class="hero-section" onlo>
-      <div class = "intro-text-Contents">
-        <p class="intro-headingz">BEST DEMANDING COURSES</p>
-        <P class="intro-yellow-txt mt-2">FOR YOUR CAREER BUILDING</P>
-        
-        <a href = "pages/contact.html" class="intro-white-back mt-4">APPLY NOW</a>
+        <p>Our ethos revolves around a pioneering approach that seamlessly integrates cutting-edge technology, strategic marketing insights, and a profound understanding of the intricate dynamics within the healthcare industry. This amalgamation of expertise allows us to craft solutions that not only meet the expectations of our clients but consistently surpass them.</p>
 
-        <a href = "" class="intro-white-back mt-5">DOWNLOAD BROCHURE</a>
+        <p>Embracing the spirit of innovation, we have continually delivered high-impact solutions that resonate with the evolving needs of the pharmaceutical domain. Our dedication goes beyond conventional boundaries, envisioning a future where each stride forward is a resolute step towards a healthier, brighter, and more promising tomorrow.</p>
 
-      </div>
-    </section>
+        <p>Join us on this transformative journey, where innovation knows no bounds, and every endeavor is a testament to our enduring commitment to advancing healthcare through progressive Pharma Marketing solutions. As we navigate the intricate tapestry of challenges and opportunities, we invite you to be an integral part of this narrative, shaping the future of healthcare alongside E Lembos Life Sciences.</p>
+    </div>
+</section>
 
-    <!--New Section-->
-    <section class="mt-5 mb-5 about-section text-center">
-      <!-- <p class="headingz">We provide exclusive and Best Courses, Real World Training & Industry Readiness Bootcamp for your Career building</p> -->
 
-      <div class="home-show-align">
-        <div class="card shadow mt-3">
-          <img src="Supports/Images/corporate.jpg" class="card-img-top" alt="corp image">
-          <div class="card-body">
-            <a href="#" class="btn new-sec-btn"><strong>BOOTCAMPS</strong> </a>
-          </div>
-        </div>
-      
-      <div class="card shadow mt-3">
-        <img src="Supports/Images/courses.jpg" class="card-img-top" alt="corp image">
-        <div class="card-body">
-          <a href="#" class="btn new-sec-btn"><strong>COURSES</strong></a>
-        </div>
-      </div>
-      
-      </div>
-    </section>
-  <!--New Section-->
+<section id="about">
+  <div class="container" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p>Founded in 2022, E Lembos Life Sciences has embarked on a transformative journey dedicated to revolutionizing Pharma Marketing. Committed to excellence, we have etched our presence in the industry as innovators and trailblazers.</p>
 
-      <!--About Banner-->
-      <section class="about-banner text-center">
-        <div class="banner-content-align">
-          <p class="headingz">About us</p>
-          <p class="abt-banner-text">We Provide Exclusive And Best Demanding Courses, <br /> Real World Training & Industry Readiness Bootcamps<br/> For Your Career Building.</p>
-  
-          <div class="banner-card-align">
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/learning.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Experential Learning</p>
-            </div>
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/onlineintern.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Online Internship</p>
-            </div>
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/projects.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Real World Projects</p>
-            </div>
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/career.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Career Assistance</p>
-            </div>
-          </div>
-  
-          <div class="banner-card-align">
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/skill.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Skill Assessment</p>
-            </div>
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/resume.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Resume Reviews</p>
-            </div>
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/industry.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Industry Connect</p>
-            </div>
-  
-            <div class="banner-card shadow text-center">
-              <img src="Supports/Images/AboutIcns/jobs.jpg" alt="Learning img" class="img-fluid" width="80%">
-              <p class="banner-card-text">Jobs & Job fairs</p>
-            </div>
-          </div>
-  
-        </div>
-      </section>
-       <!--About Banner End-->
+      <p>Our unwavering commitment to providing top-notch solutions in medicine packaging is rooted in a deep-seated dedication to ensuring the safety and integrity of pharmaceutical products. We understand the critical role that packaging plays in the pharmaceutical ecosystem, and our mission is to redefine industry standards through a perfect blend of precision, creativity, and innovation.</p>
 
-    <!--Team Section Start-->
-    <section class="cardz-slider-sec mt-5">
-      <p class="headingz">Meet Our Team</p>
+      <p>At the core of our philosophy is the belief that medicine packaging is not just a functional necessity but an opportunity to infuse vibrancy and ingenuity. We aim to bring a splash of color and innovation to the world of medicine packaging, transforming it from a mere protective covering into a powerful medium that communicates brand identity and resonates with end-users.</p>
 
-      <div class = "clients-slider slider contentz-slider text-center">
+      <p>As a dynamic force in the Pharma Marketing landscape, we continually push the boundaries of what is possible. Our journey is marked by a relentless pursuit of excellence, a commitment to pushing the envelope of creativity, and a passion for making a positive impact on the healthcare industry.</p>
 
-        <div class="whole-staff-wrapper">
-          <div class="image-circle-container shadow">
-            <img src="Supports/Images/staffs/Anandaprabhu1.jfif" alt="" class="img-fluid">
-          </div>
-          <p class="staff-name">Ananda prabhu R</p>
-          <p class="staff-role">Managing Director</p>
-        </div>
+      <p>Join us in our mission to redefine Pharma Marketing, where every solution we provide is a testament to our commitment to excellence, safety, and innovation. E Lembos Life Sciences invites you to explore the boundless possibilities that arise when dedication meets ingenuity.</p>
+  </div>
+</section>
 
-        <div class="whole-staff-wrapper">
-          <div class="image-circle-container shadow">
-            <img src="Supports/Images/staffs/Floyd Almeida.jfif" alt="" class="img-fluid">
-          </div>
-          <p class="staff-name">Mr. Floyd Almeida</p>
-          <p class="staff-role">Mentor<br />International HR Professional</p>
-        </div>
 
-        <div class="whole-staff-wrapper">
-          <div class="image-circle-container shadow">
-            <img src="Supports/Images/staffs/Ramakrishnan1.jfif" alt="" class="img-fluid">
-          </div>
-          <p class="staff-name">Ramakrishnan N</p>
-          <p class="staff-role">Mentor <br />Network & Cyber Security</p>
-        </div>
+<section id="products">
+  <div class="container" data-aos="fade-up">
+    <h2>Our Innovative Products</h2>
 
-        <div class="whole-staff-wrapper">
-          <div class="image-circle-container shadow">
-            <img src="Supports/Images/staffs/DeelipShah1.jfif" alt="" class="img-fluid">
-          </div>
-          <p class="staff-name">Deelip Shah</p>
-          <p class="staff-role">Mentor <br />Oracle SQL, PL SQL</p>
-        </div>
-
-        <div class="whole-staff-wrapper">
-          <div class="image-circle-container shadow">
-            <img src="Supports/Images/staffs/GopalChandramohan.jfif" alt="" class="img-fluid">
-          </div>
-          <p class="staff-name">Gopal Chandramohan</p>
-          <p class="staff-role">Mentor <br />Architecture Design</p>
-        </div>
-
-        <div class="whole-staff-wrapper">
-          <div class="image-circle-container shadow">
-            <img src="Supports/Images/staffs/Tamilarasan.jfif" alt="" class="img-fluid">
-          </div>
-          <p class="staff-name">M.Tamilarasan</p>
-          <p class="staff-role">Graphic Designer</p>
-        </div>
-        
+    <div class="product-gallery">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product1.jpeg" alt="Product 1">
       </div>
 
-      <div class="mt-3 slide-arrow-keys">        
-        <i class="fas fa-chevron-left fa-2x nxt2 arrow-iconz"></i>
-        <i class="fas fa-chevron-right fa-2x prv2 arrow-iconz"></i>
-      </div>
-    </section>
-    <!--Team Section End-->
-
-    <!--Corporate Clients section corporate-cli-img-->
-    <section class="about-section mt-5">
-      <p class="headingz">Corporate Clients</p>
-
-      <div class="clients-image-container">
-        <img src="Supports/Images/corporateClients/1581417202288.jfif" alt="" class="img-fluid client-img"/>
-        <img src="Supports/Images/corporateClients/datayan.webp" alt="" class="img-fluid client-img"/>
-      </div>
-    </section>
-    <!--Corporate Clients section corporate-cli-img-->
-
-    <!--News Letter Section START-->
-    <section class="news-sec">
-
-      <div class="text-center news-texts">
-        <p class="headingz text-white mt-3">Subscribe to our newsletter</p>
-        <p class="service-texts text-white">Join our weekly newsletter to be notified about the latest posts. Get remarkable content, trends and insights right in your inbox.</p>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product2.jpeg" alt="Product 2">
       </div>
 
-      <div class="news-form mt-4">
-        <form>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <button class="btn btn-success float-end"><b>Subscribe</b></button>
-          <div class="clearfix"></div>
-      </form>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product3.jpeg" alt="Product 3">
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product4.jpeg" alt="Product 4">
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product5.jpeg" alt="Product 5">
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product6.jpeg" alt="Product 6">
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product7.jpeg" alt="Product 7">
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product8.jpeg" alt="Product 8">
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product9.jpeg" alt="Product 9">
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product10.jpeg" alt="Product 10">
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product11.jpeg" alt="Product 11">
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product12.jpeg" alt="Product 12">
+      </div>
+
+      <!-- Product 13 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product13.jpeg" alt="Product 13">
+      </div>
+
+      <!-- Product 14 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product14.jpeg" alt="Product 14">
+      </div>
+
+      <!-- Product 15 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product15.jpeg" alt="Product 15">
+      </div>
+
+      <!-- Product 16 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product16.jpeg" alt="Product 16">
+      </div>
+
+      <!-- Product 17 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product17.jpeg" alt="Product 17">
+      </div>
+
+      <!-- Product 18 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product18.jpeg" alt="Product 18">
+      </div>
+
+      <!-- Product 19 -->
+      <div class="product-card">
+        <img class="product-img" src="Supports/Images/Products/Product19.jpeg" alt="Product 19">
+      </div>
     </div>
 
-      <div class="img-back-white mob-d-none">
-        <img src="Supports/Images/news.jpeg" alt="" class = "img-fluid" width="300px">
-      </div>
-    </section>
-    <!--News Letter Section END-->
-
-  <div class="clear-fxx"></div>
-
-  <section class="about-section mb-5 mt-5">
-      <div class="row">
-        <div class="col-sm-0"></div>
-        <div class="col-sm-4">
-            <p class="service-sub-headingz">Contact Us Now</p>
-            <p>Complete the contact form below and one of our dedicated Business Consultants will be in touch shortly.</p>
-        </div>
-        <!-- <div class="col-sm-1"></div> -->
-        <div class="col-sm-8">
-          <form action="" class="mt-3 abt-form" onsubmit="SubmitHandler(event)" id="frm" novalidate>
-            <div class="row">
-                <div class="mb-3 col-sm-5">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="Name" required>
-                  </div>
-                <div class="col-sm-1"></div>
-                <div class="mb-3 col-sm-5">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" name="Email" required>
-                  </div>
-            </div>
-
-            <div class="row">
-                <div class="mb-2 col-sm-5">
-                    <input type="number" class="form-control" id="contact" placeholder="Contact" name="Contact" onfocusout="phoneCheck(event)" required pattern="[0-9]{10}">
-                    <small id="contact-err" class = "text-danger"></small>
-                  </div>
-                <div class="col-sm-1"></div>
-                <div class="mb-3 col-sm-5">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject" name="Subject" required>
-                </div>
-            </div>
+    <div class="gallery-arrows-container">
+      <div class="gallery-arrow" onclick="scrollGallery(-1)">❮</div>
+      <div class="gallery-arrow" onclick="scrollGallery(1)">❯</div>
+    </div>
+  </div>
+</section>
 
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="Message"></textarea>
-              </div>
-              
-              <button class="btn abt-btn" onclick="SubmitHandler(event)">SEND</button>
-              <small class="text-success" id="msg"></small>
-              <div id = "spinner-enquiry" class="spinner-border text-success spinner-hide" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
+
+  <section id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+      <form
+        action="https://formspree.io/f/mpzvzqyr"
+        method="POST"
+      >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
         </form>
-        </div>
-        <div class="clear-fxx"></div>
+      </div>
     </div>
-    </section>
+  </section>
 
-    <!-- <div class="mb-3 p-3 text-center">
-      <p class="headingz">TO REGISTER OR JOIN FOR TRAINING</p>
-      <p class="service-sub-headingz">Contact Our Support Team On <span class="nav-green-clr"> +916382698859</span></p>
+  <footer>
+    <p>&copy; 2023 E LEMBOS LIFE SCIENCES</p>
+  </footer>
 
-      <a href="../pages/contact.html" class="btn what-btn-grn mt-3">CONTACT US NOW</a>
-  </div> -->
-
-    <!--FOOTER START-->
-    <footer class="clr-teal p-3">
-      <div class="text-center">
-        <img src="Supports/Images/logo1.jfif" alt="" width="75%" />
-      </div>
-      
-      <div class="text-center">
-        <p><b>YaaRaa Technologies</b> – We Provide Exclusive And Best Demanding Courses, Real World Training & Industry Readiness Bootcamps<br/> For Your Career Building.</p>
-      </div>
-
-      <!-- <div class="footer-links text-center">
-        <h3>Quick Links</h3>
-        <a href="pages/about.html" class="footer-links-link">About</a>
-        <a href="pages/corporate.html" class="footer-links-link">Corporate Training</a>
-        <a href="pages/whatwedo.html" class="footer-links-link">What We Do</a>
-        <a href="pages/contact.html" class="footer-links-link">Contact</a>
-      </div> -->
-      
-      <div class="text-center">
-        <h3>Contact</h3>
-        <p><a href="mailto:yaaraatechnologies@gmail.com" class="footer-links-link"><i class="far fa-envelope"></i> yaaraatechnologies@gmail.com</a></p>
-        <p><i class="fas fa-phone"></i> +916382698859</p>
-      </div>
-    </footer>
-
-    <section class="mt-1 last-nav">
-      <div class="">
-        <ul class="my-row ls-none">
-          <li class="f-icon fb-clr"><a href="https://www.facebook.com/yaaraatechnologies" target="_" class="header-links"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="f-icon g-clr"><a href="" class="header-links"><i class="fab fa-google"></i></a></li>
-          <li class="f-icon insta-clr"><a href="" class="header-links"><i class="fab fa-instagram"></i></a></li>
-          <li class="f-icon li-clr"><a href="https://www.linkedin.com/company/yaaraa-technologies/" target="_" class="header-links"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-    </div>
-
-    <div><b>Copyright &copy; 2021 YaaRaa Technologies.</b></div>
-    </section>
-    <!--FOOTER END-->
-
-    <!--Whats APP ICON FIXED-->
-    <div class="whats-app-fixed"> <a href="https://wa.me/+916382698859" target="_"><img src="Supports/Images/whatsapp-logo.svg" alt="Whats-app LOGO" width="50px"></a> </div>
-
-    <section class="loaders" id = "loader">
-      <div class="spinner-grow text-danger me-2" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    
-      <div class="spinner-grow text-warning me-2" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    
-      <div class="spinner-grow text-success" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-    <script src="Supports/JS/index.js"></script>
-
-    <!-- Slick SLiders JS -->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="Supports/JS/slick.js" type="text/javascript" charset="utf-8"></script>
-
-    <script type="text/javascript">
-    $(document).on('ready', function() {
-
-      // $('.responsive').slick({
-      //   dots: false,
-      //   infinite: true,
-      //   speed: 300,
-      //   slidesToShow: 4,
-      //   slidesToScroll: 4,
-      //   nextArrow: $('.prv'),
-      //   prevArrow: $('.nxt'),
-      //   autoplay: true,
-      //   autoplaySpeed: 3000,
-      //   responsive: [
-      //     {
-      //       breakpoint: 1024,
-      //       settings: {
-      //         slidesToShow: 3,
-      //         slidesToScroll: 3,
-      //         infinite: true,
-      //         dots: true
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 600,
-      //       settings: {
-      //         slidesToShow: 2,
-      //         slidesToScroll: 2
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 480,
-      //       settings: {
-      //         slidesToShow: 1,
-      //         slidesToScroll: 1
-      //       }
-      //     }
-      //   ]
-      //   });
-        
-        $('.clients-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        nextArrow: $('.prv2'),
-        prevArrow: $('.nxt2'),
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              dots: false,
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              dots: false,
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+  <script>
+    // Particles.js configuration
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-});
+        },
+        color: {
+          value: '#2196F3'
+        },
+        shape: {
+          type: 'circle',
+          stroke: {
+            width: 0,
+            color: '#2196F3'
+          },
+          polygon: {
+            nb_sides: 5
+          },
+          image: {
+            src: 'img/github.svg',
+            width: 100,
+            height: 100
+          }
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false
+          }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.6,
+            sync: false
+          }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#2196F3',
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200
+          }
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse'
+          },
+          onclick: {
+            enable: true,
+            mode: 'push'
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1
+            }
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 6,
+            speed: 3
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4
+          },
+          push: {
+            particles_nb: 4
+          },
+          remove: {
+            particles_nb: 2
+          }
+        }
+      },
+      retina_detect: true
+    });
 
-      });
+    // Initialize AOS (Animate On Scroll)
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+
+    // Add smooth scrolling for anchor links
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $($(this).attr('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+    function scrollGallery(direction) {
+      const gallery = document.querySelector('.product-gallery');
+      gallery.scrollLeft += direction * (gallery.clientWidth / 2); // Adjust the scroll distance
+    }
   </script>
 
 </body>
