@@ -54,26 +54,40 @@
     }
 
     header {
-      background-color: #A5464C;
+      background-color: #cc757a;
       color: #fff;
       text-align: center;
       padding: 1em 0;
       position: fixed;
       width: 100%;
       z-index: 1000;
+      justify-content: space-between; /* Add this line to distribute items */
     }
 
     nav {
-      background-color: #A5464C;
-      overflow: hidden;
+      background-color: #cc757a;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-
+    #home,
+#about,
+#products,
+#contact {
+  /* padding-top: 100px; Adjust the padding as needed */
+}
     nav a {
       float: left;
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      padding: 14px 8px;
       text-decoration: none;
       transition: background-color 0.3s;
     }
@@ -139,8 +153,8 @@
 
 
     .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
+      width: 60%;
+      margin: auto;
     }
 
     footer {
@@ -175,11 +189,6 @@
       margin-top: 10px;
     }
 
-    .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 .contact-form form {
   display: grid;
   grid-gap: 16px;
@@ -211,10 +220,108 @@
 .contact-form button:hover {
   background-color: #64B5F6;
 }
+.navigation{
+  /* width: 20% !important; */
+  display: flex;
+  justify-content: end;
+}
+h1 {
+  font-family: 'CG Times', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  /* flex-grow: 1; Allow text to take remaining space */
+  margin: 0; /* Remove default margin for h1 */
+    }
+.background-image-header {
+  width: 10%;
+    margin-left: 20px;
+    align-items: flex-start;
+    display: flex;
+}
+.nav-outer-div{
+  width: 20%;
+}
+.nav-outer-div2{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team-members {
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+  /* width: 25%; */
+}
 
-    /* Add more styles as needed */
+.team-member-photo {
+  border: 5px double #A5464C;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
 
+.team-member-photo img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-info h3 {
+  color: #A5464C;
+}
+
+.team-member-info p {
+  color: #666;
+}
+.address{
+  width: 60%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .team-member-photo {
+    width: 80px;
+    height: 80px;
+  }
+  nav {
+    flex-direction: column;
+    padding: 1em 0 0 0 !important;
+    /* align-items: flex-start; */
+  }
+.nav-outer-div{
+  width: auto;
+}
+.nav-outer-div2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -20px;
+}
+  nav a {
+    padding: 5px;
+    /* margin-bottom: 10px; */
+  }
+  .background-image-header {
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
   </style>
 </head>
 <body>
@@ -225,22 +332,29 @@
 
   <div id="particles-js"></div>
 
-  <header>
-    <h1>E LEMBOS LIFE SCIENCES</h1>
-  </header>
+
 
   <nav>
-    <div class="container">
+    <!-- <header> -->
+      <!-- <div class="nav-outer-div">
+      </div> -->
+      <div class="nav-outer-div2">
+        <img class="background-image-header" src="Supports/Images/onlylogo.png" alt="Company Logo">
+        <h1>E Lembos Life Sciences</h1>
+      </div>
+    <!-- </header> -->
+    <div class="navigation nav-outer-div">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#products">Products</a>
+      <a href="#team">Team</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <section id="home" class="home">
     <div class="container">
-        <h2>Welcome to E Lembos Life Sciences</h2>
+        <h2 style="margin-top: 30px;">Welcome to E Lembos Life Sciences</h2>
         <p>At E Lembos Life Sciences, we proudly stand as your unwavering ally in the realm of innovative Pharma Marketing solutions, marking our indelible presence since the inception of our journey in 2022. Over the years, our commitment to excellence has propelled us to the forefront of transforming the pharmaceutical landscape, setting new standards of distinction.</p>
 
         <p>Our ethos revolves around a pioneering approach that seamlessly integrates cutting-edge technology, strategic marketing insights, and a profound understanding of the intricate dynamics within the healthcare industry. This amalgamation of expertise allows us to craft solutions that not only meet the expectations of our clients but consistently surpass them.</p>
@@ -376,28 +490,87 @@
   </div>
 </section>
 
+<section id="team">
+  <div class="container" data-aos="fade-up">
+    <h2>Meet our team</h2>
+    <div class="team-members">
+      <!-- Team Member 1 -->
+      <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member-photo">
+          <img src="Supports/Images/GM-removebg-preview.png" alt="Team Member 1">
+        </div>
+        <div class="team-member-info">
+          <h3>Prabuddha Bandyopadhyay</h3>
+          <h4>General Manager, Marketing</h4>
+          <p>Think tank of E Lembos Life Sciences, having 36 years vast experience in different MNCs all over India and built many big brands</p>
+        </div>
+      </div>
 
+      <!-- Team Member 2 -->
+      <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member-photo">
+          <img src="Supports/Images/dilipKumar__1_-removebg-preview.png" alt="Team Member 2">
+        </div>
+        <div class="team-member-info">
+          <h3>Dilip Kumar</h3>
+          <h4>Sales Manager</h4>
+          <p>Having 22 years of experience of Pharma Sales & Marketing</p>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member-photo">
+          <img src="Supports/Images/sujeetKumar-removebg-preview.png" alt="Team Member 2">
+        </div>
+        <div class="team-member-info">
+          <h3>CA Sujeet Kumar Srivastava</h3>
+          <h4>Financial Advisor</h4>
+          <p>With a deep understanding of market trends, investment strategies, and risk management, he plays a pivotal role in steering our journey toward financial success.</p>
+        </div>
+      </div>
+
+                  <!-- Team Member 4 -->
+      <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member-photo">
+          <img src="Supports/Images/ZM-removebg-preview.png" alt="Team Member 2">
+        </div>
+        <div class="team-member-info">
+          <h3>Prakash Anand</h3>
+          <h4>Zonal Manager</h4>
+          <p>Having 22 years of experiencein Pharma Sales & Marketing</p>
+        </div>
+      </div>
+  </div>
+</section>
 
   <section id="contact">
     <div class="container" data-aos="fade-up">
       <h2>Contact Us</h2>
-      <div class="contact-form">
-      <form
-        action="https://formspree.io/f/mpzvzqyr"
-        method="POST"
-      >
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+<!-- <div style="display: flex;"> -->
+  <div class="address">
+    <img width="100%" src="Supports/Images/building.jpg" alt="building">
+    <h3>Business Office:- 13F-B-05, Empire Heights Tower B Business Bay, Dubai-U.A.E</h3>
+  </div>
+  <div class="contact-form">
+    <h5>Need more help? Write to us below...</h5>
+  <form
+    action="https://formspree.io/f/mpzvzqyr"
+    method="POST"
+  >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+<!-- </div> -->
     </div>
   </section>
 
@@ -526,14 +699,14 @@
 
     // Add smooth scrolling for anchor links
     $('a[href^="#"]').on('click', function(event) {
-      var target = $($(this).attr('href'));
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-      }
-    });
+  var target = $($(this).attr('href'));
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: target.offset().top - 70 // Adjust the offset based on your padding
+    }, 1000);
+  }
+});
     function scrollGallery(direction) {
       const gallery = document.querySelector('.product-gallery');
       gallery.scrollLeft += direction * (gallery.clientWidth / 2); // Adjust the scroll distance
